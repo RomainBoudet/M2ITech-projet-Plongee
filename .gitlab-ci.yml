@@ -1,0 +1,3 @@
+init:project-versionning:
+  script:
+    - echo 'First Script ! Enjoy :)'
