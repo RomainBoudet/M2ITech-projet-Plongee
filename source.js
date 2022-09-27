@@ -65,6 +65,7 @@ const div1 = document.createElement("div");
 const p = document.createElement("p");
 const contentP = document.createTextNode("Bienvenue chez DiveDev !");
 p.appendChild(contentP);
+p.style.cssText = "text-align:center";
 p.style.cssText = "color:white;font-size:30px;padding:100px";
 div1.appendChild(p);
 
