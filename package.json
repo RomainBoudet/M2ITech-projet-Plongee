@@ -1,0 +1,19 @@
+{
+  "name": "project-sous_marin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "source.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomainBoudet/M2ITech-projet-Plongee.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomainBoudet/M2ITech-projet-Plongee/issues"
+  },
+  "homepage": "https://github.com/RomainBoudet/M2ITech-projet-Plongee#readme"
+}
