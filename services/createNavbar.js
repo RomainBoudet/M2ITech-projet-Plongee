@@ -12,9 +12,7 @@ export const createNavbar = (obj) => {
   );
 
   for (const item in obj) {
-    console.log("document.body => ", document.body);
-
-    console.log("divContainer for ...of => ", divContainer);
+ 
     const button = createHTML(
       "button",
       "",
@@ -22,7 +20,7 @@ export const createNavbar = (obj) => {
       "margin:20px;border-radius:20px",
       nav
     );
-    const a = createHTML(
+    createHTML(
       "a",
       ["nav-link"],
       `${item}`,
