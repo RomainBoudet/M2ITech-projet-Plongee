@@ -4,7 +4,10 @@ import { tarif } from "../composants/tarif.js";
 import { agenda } from "../composants/agenda.js";
 import { contact } from "../composants/contact.js";
 
-
+/**
+ * Mon objet de configuration pour la navbar
+ * @return Un objet de configuration, avec en clé le nom qui sera présent dans la navbar et en value, mon composant
+ */
 export const configNavBar = {
     acceuil: "acceuil",
     tarif: tarif,

@@ -3,6 +3,11 @@ import { configNavBar as obj } from "../config/configNavBar.js";
 import { divContainer } from "../source.js";
 import { createAccueil } from "./createAccueil.js";
 
+/**
+ * Une fonction pour créer une navbar en fonction de l'objet de configuration
+ * @param {*} obj En objet, la configuration pour la navbar.
+ * @return Renvoie une navbar rattaché au body
+ */
 export const createNavbar = (obj) => {
   const nav = createHTML(
     "nav",

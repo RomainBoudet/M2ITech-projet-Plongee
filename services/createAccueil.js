@@ -2,6 +2,11 @@
 import { divContainer } from "../source.js";
 import { createHTML, createIMG } from "./createHTML.js";
 
+/**
+ * Une fonction pour créer une page d'acceuil. 
+ * V1 ici, aucun paramétre pris en compte
+ * @return une div avec tous le contenu de la page d'acceuil
+ */
 export const createAccueil = () => {
 
     const divContainer2 = createHTML("div", "", "", "display:flex;justify-content:space-evenly;padding:30px", divContainer);
