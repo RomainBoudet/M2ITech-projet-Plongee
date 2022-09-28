@@ -51,8 +51,8 @@ export const createHTML = (type, oneClasse, content, css, parent) => {
     img.className = "card-img-top";
 
     const cardBody = createHTML("div", ["card-body"], "", "", card );
-    createHTML("h5", ["card-title"], title, "color:darkblue;padding:50px;text-align:center", cardBody);
-    createHTML("p", ["card-text"],subTitle, "text-align:center;", cardBody);
+    createHTML("h5", ["card-title"], title, "color:darkblue;padding:20px;text-align:center", cardBody);
+    createHTML("p", ["card-text"],subTitle, "text-align:center;padding:30px", cardBody);
     const a = createHTML("a", ["btn", "btn-primary"], "retour à l'acceuil", "text-align:center", "");
     
     a.addEventListener("click", (event) => {
