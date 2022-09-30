@@ -1,6 +1,6 @@
 import { createHTML } from "./createHTML.js";
-import { configNavBar as obj } from "../config/configNavBar.js";
-import { divContainer } from "../source.js";
+import { configNavBar as obj } from "../model/configNavBar.js";
+import { divContainer } from "../../src.js";
 import { createAccueil } from "./createAccueil.js";
 
 /**
@@ -42,6 +42,7 @@ export const createNavbar = (obj) => {
         createAccueil();
         return document.body.appendChild(divContainer);
       }
+      console.log("obj[event.target.innerHTML] ==>> ", obj[event.target.innerHTML]);
       divContainer.appendChild(obj[event.target.innerHTML]);
     });
   }

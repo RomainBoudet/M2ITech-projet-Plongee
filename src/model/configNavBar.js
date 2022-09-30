@@ -5,8 +5,8 @@ import { agenda } from "../composants/agenda.js";
 import { contact } from "../composants/contact.js";
 
 /**
- * Mon objet de configuration pour la navbar
- * @return Un objet de configuration, avec en clé le nom qui sera présent dans la navbar et en value, mon composant
+ * Mon objet de données pour la navbar
+ * @return Un objet de configuration, avec en clé le nom qui sera présent dans la navbar et en value, mon composant associées
  */
 export const configNavBar = {
     acceuil: "acceuil",
@@ -15,3 +15,6 @@ export const configNavBar = {
     contact: contact,
     propos: propos,
   };
+
+
+  

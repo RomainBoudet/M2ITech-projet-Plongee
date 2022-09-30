@@ -1,5 +1,5 @@
 
-import { divContainer } from "../source.js";
+import { divContainer } from "../../src.js";
 import { createHTML, createIMG } from "./createHTML.js";
 
 /**
