@@ -1,5 +1,5 @@
 import { createCARD } from "../services/createHTML.js";
-import { Card } from "../model/agendaModel.js";
+import { Card } from "../model/modelClass.js";
 
 // on récupére les données de notre modéle :
 const data = await Card.findAllContact();

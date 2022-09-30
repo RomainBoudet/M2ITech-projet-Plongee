@@ -3,6 +3,8 @@ import { propos } from "../composants/propos.js";
 import { tarif } from "../composants/tarif.js";
 import { agenda } from "../composants/agenda.js";
 import { contact } from "../composants/contact.js";
+import { produits } from "../composants/produits.js";
+
 
 /**
  * Mon objet de données pour la navbar
@@ -14,6 +16,7 @@ export const configNavBar = {
     agenda: agenda,
     contact: contact,
     propos: propos,
+    produits: produits
   };
 
 

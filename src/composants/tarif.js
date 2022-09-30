@@ -1,5 +1,5 @@
 import { createCARD } from "../services/createHTML.js";
-import { Card } from "../model/agendaModel.js";
+import { Card } from "../model/modelClass.js";
 
 const data = await Card.findAllTarif();
 

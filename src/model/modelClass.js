@@ -1,6 +1,7 @@
 
 import { agendaData,tarifData, proposData, contactData } from "../../data/cardData.js";
 
+  
 export class Card {
   src;
   title;
@@ -15,6 +16,8 @@ export class Card {
     }
   }
 
+  // Rhô la belle API ...
+  // https://artisanat-madagascar.art/v1/user/produits
 
   // on prépare le terrain pour une requete asyncrone vers API !
 
@@ -76,7 +79,7 @@ export class Card {
       };
 
 
-        /**
+   /**
    * Méthode chargé d'aller chercher les informations relatives à toutes les donnée de la Card Agenda
    * @returns - tous les categorie présent en BDD
    * @static - une méthode static

@@ -71,7 +71,8 @@ export const createCARD = (src, title, subTitle) => {
     "div",
     "",
     "",
-    "display: flex;justify-content: center;align-items: center;margin: 100px",
+    "",
+    //"margin: 10px; display: flex; justify-content: center;align-items: stretch",
     ""
   );
   const card = createHTML(
@@ -119,17 +120,27 @@ export const createCARD = (src, title, subTitle) => {
   return cardDone;
 };
 
-export const createThumbnails = (src, title, content, contentButton1, contentButton2 ) => 
-`<div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="${src}" alt="...">
-      <div class="caption">
-        <h3>${title}</h3>
-        <p>${content}</p>
-        <p><a href="#" class="btn btn-primary" role="button">${contentButton1}</a> <a href="#" class="btn btn-default" role="button">${contentButton2}</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-  `;
+// je lui donne en entrée un tableau de produit.
+// Etape 1, faire un tableau de cards.
+// Etape 2, relier chacune de ces nouvelles card au container parent
+export const createCarousel = (arrayData) => {
+  const cardContainer = createHTML(
+    "div",
+    ["card-group"],
+    // ["carousel", "card-group"],
+    "",
+    "diplay: flex; justify-content: center; align-items: center"
+    
+  );
+
+  const arrayCards = arrayData.map((produit) =>
+    createCARD(produit.image[0], produit.produit, produit.description)
+  );
+
+  for (const item of arrayCards) {
+    cardContainer.appendChild(item);
+  };
+
+  return cardContainer;
+};
+

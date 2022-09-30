@@ -5,7 +5,7 @@ import { createHTML } from "./src/services/createHTML.js";
 /**
  * Définition de ma balise container
  */
-export const divContainer = createHTML("div",["container"],"","dispay:flex;");
+export const divContainer = createHTML("div",["container"],"","");
 
 
 /**
